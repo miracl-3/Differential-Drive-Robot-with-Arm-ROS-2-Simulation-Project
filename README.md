@@ -1,4 +1,4 @@
-# Differential Drive Arm Robot – ROS 2 Simulation Project
+# Differential Drive with a 2DOF Arm Robot – A ROS 2 Simulation Mini Project
 
 This repository contains a **ROS 2 package** for simulating a mobile differential drive robot equipped with a simple robotic arm.  
 The project integrates **URDF/Xacro robot description**, **Gazebo (ros_gz_sim)** for simulation, and **RViz2** for visualization.
@@ -17,10 +17,10 @@ The project integrates **URDF/Xacro robot description**, **Gazebo (ros_gz_sim)**
 
 ## 🛠️ Requirements
 
-- **ROS 2 Jazzy** (tested on Jazzy)  
-- **colcon** build system  
-- **Gazebo (Fortress or Garden)** with `ros_gz_sim`  
-- Python 3.8+  
+- **Ubuntu Noble 24.02** or Docker but I won't mention it here.
+- **ROS 2 Jazzy**
+- **GZ Harmonic (LTS)**
+- **Rviz2**  
 
 ROS 2 installation instructions: [ROS 2 Installation Guide](https://docs.ros.org/en/jazzy/Installation.html)
 
@@ -28,11 +28,12 @@ ROS 2 installation instructions: [ROS 2 Installation Guide](https://docs.ros.org
 
 ## 📂 Repository Structure
     .
-    ├── config                   # Compiled files (alternatively `dist`)
-    ├── launch                    # Documentation files (alternatively `doc`)
-    ├── urdf                     # Source files (alternatively `lib` or `app`)
-    ├── worlds                    # Automated tests (alternatively `spec` or `tests`)
-    ├── .gitignore                   # Tools and utilities
-    ├── CMakeList.txt
-    ├── README.md
-    └── package.xml
+    ├── config/                   # Config files (RViz2, ROS-Gazebo bridge)
+    ├── launch/                   # Launch files (XML and Python)
+    ├── urdf/                     # Robot description (URDF/Xacro models)
+    ├── worlds/                   # Gazebo world files
+    ├── .gitignore                # Ignore build/log/install when pushing to GitHub
+    ├── CMakeLists.txt            # CMake build script for the ROS 2 package
+    ├── README.md                 # Project documentation
+    └── package.xml               # ROS 2 package manifest
+
