@@ -27,3 +27,12 @@ ROS 2 installation instructions: [ROS 2 Installation Guide](https://docs.ros.org
 ---
 
 ## 📂 Repository Structure
+    .
+    ├── config                   # Compiled files (alternatively `dist`)
+    ├── launch                    # Documentation files (alternatively `doc`)
+    ├── urdf                     # Source files (alternatively `lib` or `app`)
+    ├── worlds                    # Automated tests (alternatively `spec` or `tests`)
+    ├── .gitignore                   # Tools and utilities
+    ├── CMakeList.txt
+    ├── README.md
+    └── package.xml
