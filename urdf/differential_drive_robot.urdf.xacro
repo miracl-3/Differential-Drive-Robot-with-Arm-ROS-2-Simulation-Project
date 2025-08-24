@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<robot name="diff_drive_arm_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    <xacro:include filename="properties.xacro" />
+    <xacro:include filename="robot_base.xacro" />
+    <xacro:include filename="gazebo_urdf_plugin.xacro" />
+    <xacro:include filename="arm_robot_base.xacro" />
+    <xacro:include filename="sensors.xacro" />
+
+    <joint name="robot_arm_base_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="arm_base_link" />
+        <origin xyz="0 0 ${base_distance + arm_base_height}" rpy="0 0 0"/>
+    </joint>
+
+</robot>
