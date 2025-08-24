@@ -17,12 +17,12 @@ The project integrates **URDF/Xacro robot description**, **Gazebo (ros_gz_sim)**
 
 ## 🛠️ Requirements
 
-- **ROS 2 Humble/Humble+** (tested on Humble)  
+- **ROS 2 Jazzy** (tested on Jazzy)  
 - **colcon** build system  
 - **Gazebo (Fortress or Garden)** with `ros_gz_sim`  
 - Python 3.8+  
 
-ROS 2 installation instructions: [ROS 2 Installation Guide](https://docs.ros.org/en/humble/Installation.html)
+ROS 2 installation instructions: [ROS 2 Installation Guide](https://docs.ros.org/en/jazzy/Installation.html)
 
 ---
 
