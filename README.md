@@ -34,6 +34,6 @@ ROS 2 installation instructions: [ROS 2 Installation Guide](https://docs.ros.org
     ├── worlds/                   # Gazebo world files
     ├── .gitignore                # Ignore build/log/install when pushing to GitHub
     ├── CMakeLists.txt            # CMake build script for the ROS 2 package
-    ├── README.md                 # Project documentation
-    └── package.xml               # ROS 2 package manifest
+    ├── package.xml               # ROS 2 package manifest  
+    └── README.md                 # Project documentation
 
